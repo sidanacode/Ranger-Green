@@ -1,0 +1,1548 @@
+[
+    {
+        "name": "Rose",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 46.78,
+        "ideal_light_lux": 43981.76,
+        "ideal_temperature_celsius": 23.16,
+        "ideal_humidity_percentage": 45.14,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Marigold",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 55.64,
+        "ideal_light_lux": 41300.03,
+        "ideal_temperature_celsius": 17.75,
+        "ideal_humidity_percentage": 57.97,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Jasmine",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 83.14,
+        "ideal_light_lux": 44893.04,
+        "ideal_temperature_celsius": 26.52,
+        "ideal_humidity_percentage": 88.85,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Hibiscus",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 80.96,
+        "ideal_light_lux": 41687.73,
+        "ideal_temperature_celsius": 32.56,
+        "ideal_humidity_percentage": 68.85,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Bougainvillea",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 19.07,
+        "ideal_light_lux": 75907.5,
+        "ideal_temperature_celsius": 40.64,
+        "ideal_humidity_percentage": 22.34,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Lotus",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 66.28,
+        "ideal_light_lux": 37482.41,
+        "ideal_temperature_celsius": 30.87,
+        "ideal_humidity_percentage": 84.27,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Tuberose",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 84.56,
+        "ideal_light_lux": 31898.68,
+        "ideal_temperature_celsius": 31.14,
+        "ideal_humidity_percentage": 79.5,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Chrysanthemum",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 57.92,
+        "ideal_light_lux": 28106.51,
+        "ideal_temperature_celsius": 11.82,
+        "ideal_humidity_percentage": 77.19,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Dahlia",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 65.08,
+        "ideal_light_lux": 26865.79,
+        "ideal_temperature_celsius": 18.4,
+        "ideal_humidity_percentage": 51.1,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Zinnia",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 47.43,
+        "ideal_light_lux": 64647.33,
+        "ideal_temperature_celsius": 36.04,
+        "ideal_humidity_percentage": 39.12,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Petunia",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 68.24,
+        "ideal_light_lux": 28498.51,
+        "ideal_temperature_celsius": 11.47,
+        "ideal_humidity_percentage": 61.62,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Sunflower",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 45.19,
+        "ideal_light_lux": 58661.71,
+        "ideal_temperature_celsius": 22.14,
+        "ideal_humidity_percentage": 52.78,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Gerbera",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 51.66,
+        "ideal_light_lux": 30951.84,
+        "ideal_temperature_celsius": 21.85,
+        "ideal_humidity_percentage": 61.25,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Anthurium",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 74.46,
+        "ideal_light_lux": 48401.84,
+        "ideal_temperature_celsius": 31.74,
+        "ideal_humidity_percentage": 75.21,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Dendrobium Orchid",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 64.54,
+        "ideal_light_lux": 43111.02,
+        "ideal_temperature_celsius": 27.0,
+        "ideal_humidity_percentage": 67.38,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Lily",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 58.12,
+        "ideal_light_lux": 30429.73,
+        "ideal_temperature_celsius": 22.45,
+        "ideal_humidity_percentage": 73.28,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Canna",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 62.46,
+        "ideal_light_lux": 48345.23,
+        "ideal_temperature_celsius": 33.83,
+        "ideal_humidity_percentage": 70.75,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Plumeria",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 19.55,
+        "ideal_light_lux": 78702.88,
+        "ideal_temperature_celsius": 41.02,
+        "ideal_humidity_percentage": 31.54,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Nerium",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 18.35,
+        "ideal_light_lux": 75910.58,
+        "ideal_temperature_celsius": 26.59,
+        "ideal_humidity_percentage": 47.64,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Ixora",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 68.12,
+        "ideal_light_lux": 45389.61,
+        "ideal_temperature_celsius": 34.28,
+        "ideal_humidity_percentage": 77.1,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Crossandra",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 66.25,
+        "ideal_light_lux": 44126.51,
+        "ideal_temperature_celsius": 30.51,
+        "ideal_humidity_percentage": 79.77,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Tecoma",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 45.26,
+        "ideal_light_lux": 63144.81,
+        "ideal_temperature_celsius": 37.67,
+        "ideal_humidity_percentage": 30.02,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Allamanda",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 75.6,
+        "ideal_light_lux": 39446.61,
+        "ideal_temperature_celsius": 31.7,
+        "ideal_humidity_percentage": 70.67,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Pentas",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 67.85,
+        "ideal_light_lux": 33598.8,
+        "ideal_temperature_celsius": 26.69,
+        "ideal_humidity_percentage": 86.49,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Lantana",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 21.64,
+        "ideal_light_lux": 76501.46,
+        "ideal_temperature_celsius": 36.99,
+        "ideal_humidity_percentage": 47.28,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Vinca",
+        "category": "Flowers",
+        "ideal_moisture_percentage": 41.98,
+        "ideal_light_lux": 62580.85,
+        "ideal_temperature_celsius": 25.51,
+        "ideal_humidity_percentage": 51.84,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Tulsi",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 41.71,
+        "ideal_light_lux": 49058.81,
+        "ideal_temperature_celsius": 14.9,
+        "ideal_humidity_percentage": 51.25,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Neem",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 15.39,
+        "ideal_light_lux": 70891.56,
+        "ideal_temperature_celsius": 29.56,
+        "ideal_humidity_percentage": 39.34,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Aloe Vera",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 20.71,
+        "ideal_light_lux": 63510.57,
+        "ideal_temperature_celsius": 42.96,
+        "ideal_humidity_percentage": 40.24,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Ashwagandha",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 39.09,
+        "ideal_light_lux": 50746.01,
+        "ideal_temperature_celsius": 30.13,
+        "ideal_humidity_percentage": 47.25,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Brahmi",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 65.73,
+        "ideal_light_lux": 45832.59,
+        "ideal_temperature_celsius": 29.99,
+        "ideal_humidity_percentage": 88.01,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Giloy",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 63.07,
+        "ideal_light_lux": 58273.36,
+        "ideal_temperature_celsius": 23.41,
+        "ideal_humidity_percentage": 54.24,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Kalmegh",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 34.44,
+        "ideal_light_lux": 69801.72,
+        "ideal_temperature_celsius": 23.89,
+        "ideal_humidity_percentage": 49.17,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Stevia",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 68.34,
+        "ideal_light_lux": 29174.27,
+        "ideal_temperature_celsius": 15.27,
+        "ideal_humidity_percentage": 56.7,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Mint",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 62.65,
+        "ideal_light_lux": 42054.55,
+        "ideal_temperature_celsius": 34.73,
+        "ideal_humidity_percentage": 52.83,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Lemon Grass",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 35.57,
+        "ideal_light_lux": 54907.81,
+        "ideal_temperature_celsius": 18.29,
+        "ideal_humidity_percentage": 60.62,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Citronella",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 82.56,
+        "ideal_light_lux": 46716.48,
+        "ideal_temperature_celsius": 30.39,
+        "ideal_humidity_percentage": 75.08,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Palmarosa",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 34.91,
+        "ideal_light_lux": 57436.42,
+        "ideal_temperature_celsius": 39.5,
+        "ideal_humidity_percentage": 44.1,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Vetiver",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 65.21,
+        "ideal_light_lux": 36161.96,
+        "ideal_temperature_celsius": 33.21,
+        "ideal_humidity_percentage": 70.78,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Patchouli",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 83.71,
+        "ideal_light_lux": 38250.26,
+        "ideal_temperature_celsius": 28.74,
+        "ideal_humidity_percentage": 86.54,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Geranium",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 66.06,
+        "ideal_light_lux": 28688.16,
+        "ideal_temperature_celsius": 21.42,
+        "ideal_humidity_percentage": 73.45,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Lavender",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 54.01,
+        "ideal_light_lux": 21834.15,
+        "ideal_temperature_celsius": 11.45,
+        "ideal_humidity_percentage": 64.02,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Mentha",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 64.95,
+        "ideal_light_lux": 41379.41,
+        "ideal_temperature_celsius": 29.98,
+        "ideal_humidity_percentage": 52.77,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Eucalyptus",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 84.95,
+        "ideal_light_lux": 32961.97,
+        "ideal_temperature_celsius": 32.71,
+        "ideal_humidity_percentage": 67.21,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Clove",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 62.98,
+        "ideal_light_lux": 43745.75,
+        "ideal_temperature_celsius": 25.7,
+        "ideal_humidity_percentage": 79.39,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Cinnamon",
+        "category": "Medicinal/Aromatic",
+        "ideal_moisture_percentage": 63.05,
+        "ideal_light_lux": 44047.71,
+        "ideal_temperature_celsius": 35.0,
+        "ideal_humidity_percentage": 84.97,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Mango",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 36.22,
+        "ideal_light_lux": 60973.38,
+        "ideal_temperature_celsius": 22.13,
+        "ideal_humidity_percentage": 54.87,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Banana",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 79.28,
+        "ideal_light_lux": 40554.02,
+        "ideal_temperature_celsius": 31.15,
+        "ideal_humidity_percentage": 75.44,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Guava",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 58.93,
+        "ideal_light_lux": 55836.2,
+        "ideal_temperature_celsius": 10.48,
+        "ideal_humidity_percentage": 69.34,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Papaya",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 47.49,
+        "ideal_light_lux": 69637.71,
+        "ideal_temperature_celsius": 31.37,
+        "ideal_humidity_percentage": 64.91,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Pomegranate",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 22.56,
+        "ideal_light_lux": 71565.17,
+        "ideal_temperature_celsius": 33.35,
+        "ideal_humidity_percentage": 20.11,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Lemon",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 47.71,
+        "ideal_light_lux": 68950.93,
+        "ideal_temperature_celsius": 38.6,
+        "ideal_humidity_percentage": 47.72,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Grapes",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 37.32,
+        "ideal_light_lux": 65153.38,
+        "ideal_temperature_celsius": 25.92,
+        "ideal_humidity_percentage": 47.16,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Sapota",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 78.74,
+        "ideal_light_lux": 37694.5,
+        "ideal_temperature_celsius": 33.94,
+        "ideal_humidity_percentage": 67.3,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Amla",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 15.3,
+        "ideal_light_lux": 61932.38,
+        "ideal_temperature_celsius": 35.07,
+        "ideal_humidity_percentage": 34.3,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Ber",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 17.28,
+        "ideal_light_lux": 63492.95,
+        "ideal_temperature_celsius": 36.84,
+        "ideal_humidity_percentage": 23.09,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Jackfruit",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 75.72,
+        "ideal_light_lux": 30367.11,
+        "ideal_temperature_celsius": 24.39,
+        "ideal_humidity_percentage": 88.18,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Custard Apple",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 44.83,
+        "ideal_light_lux": 60236.82,
+        "ideal_temperature_celsius": 23.64,
+        "ideal_humidity_percentage": 55.55,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Pineapple",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 68.52,
+        "ideal_light_lux": 45534.7,
+        "ideal_temperature_celsius": 30.61,
+        "ideal_humidity_percentage": 79.18,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Coconut",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 83.62,
+        "ideal_light_lux": 36100.55,
+        "ideal_temperature_celsius": 24.54,
+        "ideal_humidity_percentage": 85.36,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Cashew",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 72.9,
+        "ideal_light_lux": 33657.18,
+        "ideal_temperature_celsius": 32.84,
+        "ideal_humidity_percentage": 88.22,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Apple",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 55.77,
+        "ideal_light_lux": 39430.66,
+        "ideal_temperature_celsius": 19.64,
+        "ideal_humidity_percentage": 63.42,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Pear",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 65.96,
+        "ideal_light_lux": 25872.44,
+        "ideal_temperature_celsius": 20.79,
+        "ideal_humidity_percentage": 66.53,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Peach",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 53.84,
+        "ideal_light_lux": 29628.95,
+        "ideal_temperature_celsius": 17.59,
+        "ideal_humidity_percentage": 71.35,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Litchi",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 53.87,
+        "ideal_light_lux": 46319.94,
+        "ideal_temperature_celsius": 31.88,
+        "ideal_humidity_percentage": 58.29,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Strawberry",
+        "category": "Fruits",
+        "ideal_moisture_percentage": 60.61,
+        "ideal_light_lux": 36777.14,
+        "ideal_temperature_celsius": 16.18,
+        "ideal_humidity_percentage": 73.43,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Tomato",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 47.46,
+        "ideal_light_lux": 55100.52,
+        "ideal_temperature_celsius": 17.58,
+        "ideal_humidity_percentage": 50.24,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Brinjal",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 35.82,
+        "ideal_light_lux": 55238.5,
+        "ideal_temperature_celsius": 23.86,
+        "ideal_humidity_percentage": 56.04,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Chilli",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 47.31,
+        "ideal_light_lux": 69399.22,
+        "ideal_temperature_celsius": 19.55,
+        "ideal_humidity_percentage": 47.98,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Okra",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 40.95,
+        "ideal_light_lux": 65640.11,
+        "ideal_temperature_celsius": 28.64,
+        "ideal_humidity_percentage": 51.7,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Onion",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 52.57,
+        "ideal_light_lux": 51662.38,
+        "ideal_temperature_celsius": 26.66,
+        "ideal_humidity_percentage": 38.28,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Garlic",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 30.22,
+        "ideal_light_lux": 60086.25,
+        "ideal_temperature_celsius": 19.14,
+        "ideal_humidity_percentage": 39.78,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Potato",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 60.2,
+        "ideal_light_lux": 49086.53,
+        "ideal_temperature_celsius": 36.27,
+        "ideal_humidity_percentage": 47.08,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Ginger",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 65.49,
+        "ideal_light_lux": 32417.31,
+        "ideal_temperature_celsius": 32.77,
+        "ideal_humidity_percentage": 66.1,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Turmeric",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 60.36,
+        "ideal_light_lux": 39959.12,
+        "ideal_temperature_celsius": 24.4,
+        "ideal_humidity_percentage": 81.95,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Cabbage",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 51.29,
+        "ideal_light_lux": 40886.75,
+        "ideal_temperature_celsius": 25.94,
+        "ideal_humidity_percentage": 49.44,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Cauliflower",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 64.29,
+        "ideal_light_lux": 50676.62,
+        "ideal_temperature_celsius": 12.97,
+        "ideal_humidity_percentage": 68.54,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Carrot",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 48.51,
+        "ideal_light_lux": 46068.1,
+        "ideal_temperature_celsius": 20.74,
+        "ideal_humidity_percentage": 52.99,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Radish",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 48.85,
+        "ideal_light_lux": 49022.35,
+        "ideal_temperature_celsius": 18.82,
+        "ideal_humidity_percentage": 51.1,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Spinach",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 59.7,
+        "ideal_light_lux": 47210.93,
+        "ideal_temperature_celsius": 17.52,
+        "ideal_humidity_percentage": 43.11,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Bitter Gourd",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 53.05,
+        "ideal_light_lux": 59978.46,
+        "ideal_temperature_celsius": 36.85,
+        "ideal_humidity_percentage": 63.88,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Bottle Gourd",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 43.22,
+        "ideal_light_lux": 52242.75,
+        "ideal_temperature_celsius": 32.2,
+        "ideal_humidity_percentage": 48.9,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Ridge Gourd",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 52.49,
+        "ideal_light_lux": 62599.55,
+        "ideal_temperature_celsius": 22.56,
+        "ideal_humidity_percentage": 53.26,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Pumpkin",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 48.98,
+        "ideal_light_lux": 63025.8,
+        "ideal_temperature_celsius": 31.03,
+        "ideal_humidity_percentage": 57.76,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Cucumber",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 36.37,
+        "ideal_light_lux": 53430.17,
+        "ideal_temperature_celsius": 38.8,
+        "ideal_humidity_percentage": 57.49,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "French Beans",
+        "category": "Vegetables",
+        "ideal_moisture_percentage": 51.77,
+        "ideal_light_lux": 24484.57,
+        "ideal_temperature_celsius": 6.8,
+        "ideal_humidity_percentage": 68.62,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Banyan",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 52.42,
+        "ideal_light_lux": 53079.26,
+        "ideal_temperature_celsius": 28.83,
+        "ideal_humidity_percentage": 55.5,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Peepal",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 49.36,
+        "ideal_light_lux": 52706.83,
+        "ideal_temperature_celsius": 21.04,
+        "ideal_humidity_percentage": 48.03,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Ashoka",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 35.07,
+        "ideal_light_lux": 57223.26,
+        "ideal_temperature_celsius": 18.5,
+        "ideal_humidity_percentage": 34.94,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Sal",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 35.64,
+        "ideal_light_lux": 57837.04,
+        "ideal_temperature_celsius": 24.25,
+        "ideal_humidity_percentage": 37.83,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Teak",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 39.8,
+        "ideal_light_lux": 51069.24,
+        "ideal_temperature_celsius": 30.5,
+        "ideal_humidity_percentage": 49.01,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Sandalwood",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 79.82,
+        "ideal_light_lux": 32797.47,
+        "ideal_temperature_celsius": 31.55,
+        "ideal_humidity_percentage": 73.48,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Bamboo",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 82.73,
+        "ideal_light_lux": 43013.86,
+        "ideal_temperature_celsius": 25.07,
+        "ideal_humidity_percentage": 88.1,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Gulmohar",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 45.48,
+        "ideal_light_lux": 62706.98,
+        "ideal_temperature_celsius": 39.51,
+        "ideal_humidity_percentage": 31.91,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Amaltas",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 26.03,
+        "ideal_light_lux": 79079.3,
+        "ideal_temperature_celsius": 25.88,
+        "ideal_humidity_percentage": 38.3,
+        "major_indian_states": [
+            "Rajasthan",
+            "Gujarat",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Jacaranda",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 52.04,
+        "ideal_light_lux": 36737.06,
+        "ideal_temperature_celsius": 22.41,
+        "ideal_humidity_percentage": 77.73,
+        "major_indian_states": [
+            "Uttarakhand",
+            "Himachal Pradesh",
+            "Sikkim",
+            "Jammu & Kashmir"
+        ]
+    },
+    {
+        "name": "Rice",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 68.0,
+        "ideal_light_lux": 38292.12,
+        "ideal_temperature_celsius": 34.45,
+        "ideal_humidity_percentage": 80.71,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Wheat",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 45.25,
+        "ideal_light_lux": 48295.74,
+        "ideal_temperature_celsius": 10.27,
+        "ideal_humidity_percentage": 46.64,
+        "major_indian_states": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Punjab",
+            "Haryana"
+        ]
+    },
+    {
+        "name": "Maize",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 37.2,
+        "ideal_light_lux": 55004.04,
+        "ideal_temperature_celsius": 38.69,
+        "ideal_humidity_percentage": 42.97,
+        "major_indian_states": [
+            "Madhya Pradesh",
+            "Chhattisgarh",
+            "Maharashtra",
+            "Telangana"
+        ]
+    },
+    {
+        "name": "Tea",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 71.92,
+        "ideal_light_lux": 45124.57,
+        "ideal_temperature_celsius": 27.58,
+        "ideal_humidity_percentage": 89.65,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Coffee",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 71.89,
+        "ideal_light_lux": 38687.29,
+        "ideal_temperature_celsius": 28.34,
+        "ideal_humidity_percentage": 76.74,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Rubber",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 80.08,
+        "ideal_light_lux": 30757.55,
+        "ideal_temperature_celsius": 26.08,
+        "ideal_humidity_percentage": 83.48,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Arecanut",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 81.81,
+        "ideal_light_lux": 46275.51,
+        "ideal_temperature_celsius": 28.92,
+        "ideal_humidity_percentage": 88.6,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Black Pepper",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 61.89,
+        "ideal_light_lux": 38934.03,
+        "ideal_temperature_celsius": 27.18,
+        "ideal_humidity_percentage": 79.05,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Cardamom",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 62.45,
+        "ideal_light_lux": 39853.06,
+        "ideal_temperature_celsius": 24.38,
+        "ideal_humidity_percentage": 73.4,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    },
+    {
+        "name": "Vanilla",
+        "category": "Trees/Crops",
+        "ideal_moisture_percentage": 73.64,
+        "ideal_light_lux": 37002.31,
+        "ideal_temperature_celsius": 28.56,
+        "ideal_humidity_percentage": 88.62,
+        "major_indian_states": [
+            "Kerala",
+            "Tamil Nadu",
+            "Karnataka",
+            "Andhra Pradesh",
+            "West Bengal",
+            "Odisha"
+        ]
+    }
+]

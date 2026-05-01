@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const plantNameInput = document.getElementById('plantName');
+    const plantSelect = document.getElementById('plantSelect');
+    const stateSelect = document.getElementById('stateSelect');
     const submitBtn = document.getElementById('submitBtn');
     const loadingIndicator = document.getElementById('loadingIndicator');
     const recommendedSection = document.getElementById('recommendedSection');
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const careSuggestion = document.getElementById('careSuggestion');
 
     let selectedPlant = ""; // Store selected plant name
+    let selectedState = ""; // Store selected state name
     
     function getBackendUrl() {
         return 'http://localhost:5000'; // Your backend server address
@@ -47,13 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ✅ Fetch plant data & care suggestions
     async function fetchPlantData() {
-        if (!selectedPlant) return;
+        if (!selectedPlant || !selectedState) return;
 
         try {
             const response = await fetch(`${getBackendUrl()}/compare_plant`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name: selectedPlant })
+                body: JSON.stringify({ name: selectedPlant, state: selectedState })
             });
 
             if (!response.ok) throw new Error('Network response was not ok');
@@ -88,10 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ✅ Handle user input
     submitBtn.addEventListener('click', () => {
-        selectedPlant = plantNameInput.value.trim();
+        selectedPlant = plantSelect.value;
+        selectedState = stateSelect.value;
         
-        if (!selectedPlant) {
-            alert('Please enter a plant name');
+        if (!selectedPlant || !selectedState) {
+            alert('Please select a plant and a state');
             return;
         }
 
@@ -101,9 +104,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    plantNameInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            submitBtn.click();
+    // ✅ Initialize Dropdowns
+    async function initDropdowns() {
+        try {
+            const response = await fetch(`${getBackendUrl()}/get_plants`);
+            if (!response.ok) throw new Error('Failed to fetch plants');
+            const plants = await response.json();
+            
+            plants.forEach(plant => {
+                const option = document.createElement('option');
+                option.value = plant;
+                option.textContent = plant;
+                plantSelect.appendChild(option);
+            });
+        } catch (error) {
+            console.error('Error fetching plants:', error);
+        }
+    }
+    
+    plantSelect.addEventListener('change', async () => {
+        const plant = plantSelect.value;
+        stateSelect.innerHTML = '<option value="">Select State</option>'; // Reset
+        stateSelect.disabled = true;
+        
+        if (!plant) return;
+        
+        try {
+            const response = await fetch(`${getBackendUrl()}/get_states?plant_name=${encodeURIComponent(plant)}`);
+            if (!response.ok) throw new Error('Failed to fetch states');
+            const states = await response.json();
+            
+            states.forEach(state => {
+                const option = document.createElement('option');
+                option.value = state;
+                option.textContent = state;
+                stateSelect.appendChild(option);
+            });
+            stateSelect.disabled = false;
+        } catch (error) {
+            console.error('Error fetching states:', error);
         }
     });
+
+    initDropdowns();
 });

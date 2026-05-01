@@ -1,50 +1,81 @@
-from flask_cors import CORS
-from flask import Flask, request, jsonify
-from pymongo import MongoClient
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 import requests
 import json
+import os
+import uvicorn
 
-app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST", "OPTIONS"]}})
+app = FastAPI()
 
-# Setting up Connection to MongoDb Database for the Plant dataset
-MONGO_URL = "mongodb://localhost:27017"
-client = MongoClient(MONGO_URL)
-db = client["plant_database"]
-plants_collection = db["plants"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+class ESPIPRequest(BaseModel):
+    esp_ip: str
+
+class ComparePlantRequest(BaseModel):
+    name: str
+    state: str
 
 # Global variable to store ESP IP
 ESP_IP = None
 
-# Loads JSON data from the json file as file
-with open("plants_data2.json","r",encoding="utf-8") as file:
-    plants_data = json.load(file)
+# Load the state-wise plant dataset into memory
+dataset_path = os.path.join(os.path.dirname(__file__), "..", "state_wise_plant_data.json")
+try:
+    with open(dataset_path, "r", encoding="utf-8") as file:
+        state_wise_plant_data = json.load(file)
+    print("State-wise Plant Dataset loaded successfully!")
+except Exception as e:
+    print(f"Error loading state_wise_plant_data.json: {e}")
+    state_wise_plant_data = {}
 
-# Adding dataset to the MongoDb Database
-def add_plant_data():
-    if plants_collection.count_documents({})==0:
-        plants_collection.insert_many(plants_data)
-        print("Plant Dataset Added in the Database")
+@app.get('/get_plants')
+def get_plants():
+    plants = list(state_wise_plant_data.keys())
+    return plants
+
+@app.get('/get_states')
+def get_states(plant_name: str = None):
+    if not plant_name:
+        raise HTTPException(status_code=400, detail="Valid plant name is required")
+        
+    # Find plant name case-insensitively
+    plant_key = None
+    for key in state_wise_plant_data.keys():
+        if key.lower() == plant_name.lower():
+            plant_key = key
+            break
+            
+    if not plant_key:
+        raise HTTPException(status_code=404, detail="Plant not found")
+        
+    states = list(state_wise_plant_data[plant_key].keys())
+    return states
 
 # New route to set ESP IP
-@app.route('/set-esp-ip', methods=['POST'])
-def set_esp_ip():
+@app.post('/set-esp-ip')
+def set_esp_ip(data: ESPIPRequest):
     global ESP_IP
-    data = request.json
-    ESP_IP = data.get('esp_ip')
+    ESP_IP = data.esp_ip
     if ESP_IP:
-        return jsonify({"message": "ESP IP set successfully"}), 200
-    return jsonify({"error": "Invalid ESP IP"}), 400
+        return {"message": "ESP IP set successfully"}
+    raise HTTPException(status_code=400, detail="Invalid ESP IP")
 
-@app.route('/')
+@app.get('/')
 def home():
-    return "Backend Server is Running!!", 200
+    return "Backend Server is Running!!"
 
-@app.route('/fetch_sensor_data', methods=['GET'])
+@app.get('/fetch_sensor_data')
 def fetch_sensor_data():
     global ESP_IP
     if not ESP_IP:
-        return jsonify({"error": "ESP IP not configured"}), 400
+        raise HTTPException(status_code=400, detail="ESP IP not configured")
     
     try:
         sensor_response = requests.get(f"http://{ESP_IP}/sensor_data", timeout=1)
@@ -53,30 +84,58 @@ def fetch_sensor_data():
             # Add battery percentage to response if not present
             if 'battery_percentage' not in sensor_data:
                 sensor_data['battery_percentage'] = 0  # Default value if ESP doesn't send it
-            return sensor_data, 200
+            return sensor_data
         else:
-            return jsonify({"error": "Failed to fetch sensor data"}), 500
+            raise HTTPException(status_code=500, detail="Failed to fetch sensor data")
+    except HTTPException:
+        raise
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        raise HTTPException(status_code=500, detail=str(e))
 
-@app.route('/compare_plant', methods=['POST'])
-def compare_plant():
+@app.post('/compare_plant')
+def compare_plant(req: ComparePlantRequest):
     global ESP_IP
     if not ESP_IP:
-        return jsonify({"error": "ESP IP not configured"}), 400
+        raise HTTPException(status_code=400, detail="ESP IP not configured")
       
     try:
-        data = request.json
-        plant_name = data.get("name", "").lower()
+        requested_plant_name = req.name.lower()
+        requested_state_name = req.state.lower()
         
-        if not plant_name:
-            return jsonify({"error": "Plant name is required"}), 400
+        if not requested_plant_name or not requested_state_name:
+            raise HTTPException(status_code=400, detail="Plant name and state are required")
             
-        plant = plants_collection.find_one({"name": {"$regex": f"^{plant_name}$", "$options": "i"}})
-        if not plant:
-            return jsonify({"error": "Plant not found"}), 404
+        # Find exact case for plant
+        plant_name_key = None
+        for key in state_wise_plant_data.keys():
+            if key.lower() == requested_plant_name:
+                plant_name_key = key
+                break
+                
+        if not plant_name_key:
+            raise HTTPException(status_code=404, detail="Plant not found")
             
-        plant["_id"] = str(plant["_id"])
+        # Find exact case for state
+        state_key = None
+        for key in state_wise_plant_data[plant_name_key].keys():
+            if key.lower() == requested_state_name:
+                state_key = key
+                break
+                
+        if not state_key:
+            raise HTTPException(status_code=404, detail=f"State not found for plant {plant_name_key}")
+            
+        plant_params = state_wise_plant_data[plant_name_key][state_key]
+        
+        plant = {
+            "name": plant_name_key,
+            "state": state_key,
+            "ideal_temperature": plant_params.get("ideal_temperature_c"),
+            "ideal_humidity": plant_params.get("ideal_humidity_percent"),
+            "ideal_light": plant_params.get("ideal_light_lux"),
+            "ideal_moisture": plant_params.get("ideal_moisture_percent"),
+            "climatic_zone": plant_params.get("climatic_zone")
+        }
 
         try:
             sensor_response = requests.get(f"http://{ESP_IP}/sensor_data", timeout=1)
@@ -96,7 +155,7 @@ def compare_plant():
             light_intensity = float(sensor_data.get("light_intensity", 0))
         except ValueError as e:
             print(f"Error converting sensor data: {e}")
-            return jsonify({"error": "Invalid sensor data format"}), 400
+            raise HTTPException(status_code=400, detail="Invalid sensor data format")
 
 # If humidity and light intensity should be integers
         humidity = int(humidity)
@@ -146,23 +205,25 @@ def compare_plant():
         except Exception as e:
             print(f"Error sending Threshold value: {e}")
 
-        return jsonify({
+        return {
             "plant": plant,
             "sensor_data": sensor_data,
             "suggestions": suggestions,
             "pump_status": pump_status
-        }), 200
+        }
         
+    except HTTPException:
+        raise
     except Exception as e:
         print(f"ERROR: {str(e)}")
-        return jsonify({"error": str(e)}), 500
+        raise HTTPException(status_code=500, detail=str(e))
 
 # Add this new route to clear the ESP IP
-@app.route('/clear-esp-ip', methods=['POST'])
+@app.post('/clear-esp-ip')
 def clear_esp_ip():
     global ESP_IP
     ESP_IP = None
-    return jsonify({"message": "ESP IP cleared successfully"}), 200
+    return {"message": "ESP IP cleared successfully"}
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    uvicorn.run("backend_server:app", host="0.0.0.0", port=5000, reload=True)
