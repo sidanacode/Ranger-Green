@@ -4,6 +4,8 @@
 #include <Wire.h>
 #include <BH1750.h>
 #include <ESP8266HTTPClient.h>
+#include <WiFiManager.h>
+#include <LittleFS.h>
 
 #define DHTPIN D4
 #define DHTTYPE DHT11
@@ -12,10 +14,15 @@
 #define SDA_PIN D2
 #define SCL_PIN D1
 
-const char *ssid = "Tanish";
-const char *password = "Tanish11@#";
-const char *serverUrl = "http://192.168.188.189:5001/sensor_data";
-const char *thresholdUrl = "http://192.168.188.189:5001/update_moisture";
+// Global configuration variables
+char server_ip[40] = "192.168.1.100";
+bool shouldSaveConfig = false;
+
+// Callback notifying us of the need to save config
+void saveConfigCallback() {
+  Serial.println("Should save config");
+  shouldSaveConfig = true;
+}
 
 DHT dht(DHTPIN, DHTTYPE);
 BH1750 lightMeter;
@@ -34,14 +41,70 @@ void setup()
     pinMode(RELAY_PIN, OUTPUT);
     digitalWrite(RELAY_PIN, HIGH);
 
-    WiFi.begin(ssid, password);
-    Serial.print("Connecting to WiFi");
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        delay(500);
-        Serial.print(".");
+    // Read configuration from LittleFS
+    Serial.println("Mounting FS...");
+    if (LittleFS.begin()) {
+        Serial.println("Mounted file system");
+        if (LittleFS.exists("/config.json")) {
+            Serial.println("Reading config file");
+            File configFile = LittleFS.open("/config.json", "r");
+            if (configFile) {
+                size_t size = configFile.size();
+                std::unique_ptr<char[]> buf(new char[size]);
+                configFile.readBytes(buf.get(), size);
+                StaticJsonDocument<200> json;
+                DeserializationError error = deserializeJson(json, buf.get());
+                if (!error) {
+                    Serial.println("Parsed json:");
+                    serializeJson(json, Serial);
+                    Serial.println();
+                    strcpy(server_ip, json["server_ip"] | "192.168.1.100");
+                } else {
+                    Serial.println("Failed to load json config");
+                }
+                configFile.close();
+            }
+        }
+    } else {
+        Serial.println("Failed to mount FS");
     }
+
+    WiFiManagerParameter custom_server_ip("server", "Server IP", server_ip, 40);
+
+    WiFiManager wifiManager;
+    wifiManager.setSaveConfigCallback(saveConfigCallback);
+    wifiManager.addParameter(&custom_server_ip);
+
+    // Fetches ssid and pass and tries to connect
+    // If it does not connect it starts an access point with the specified name
+    Serial.print("Connecting to WiFi...");
+    if (!wifiManager.autoConnect("RangerGreen_Setup")) {
+        Serial.println("Failed to connect and hit timeout");
+        delay(3000);
+        ESP.restart();
+        delay(5000);
+    }
+
     Serial.println("\n✅ Connected to WiFi!");
+
+    // Read updated parameters
+    strcpy(server_ip, custom_server_ip.getValue());
+
+    // Save the custom parameters to FS if they changed
+    if (shouldSaveConfig) {
+        Serial.println("Saving config");
+        StaticJsonDocument<200> json;
+        json["server_ip"] = server_ip;
+
+        File configFile = LittleFS.open("/config.json", "w");
+        if (!configFile) {
+            Serial.println("Failed to open config file for writing");
+        } else {
+            serializeJson(json, Serial);
+            serializeJson(json, configFile);
+            configFile.close();
+        }
+    }
 }
 
 void loop()
@@ -105,6 +168,7 @@ void sendDataToServer(String temperature, String humidity, String lightIntensity
     if (WiFi.status() == WL_CONNECTED)
     {
         HTTPClient http;
+        String serverUrl = String("http://") + server_ip + ":5001/sensor_data";
         http.begin(client, serverUrl);
         http.addHeader("Content-Type", "application/json");
 
@@ -130,6 +194,7 @@ void fetchMoistureThreshold()
     if (WiFi.status() == WL_CONNECTED)
     {
         HTTPClient http;
+        String thresholdUrl = String("http://") + server_ip + ":5001/update_moisture";
         http.begin(client, thresholdUrl);
         int httpResponseCode = http.GET();
 
